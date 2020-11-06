@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>htmlhints Login Form Validation</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.9.6/tailwind.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="app.css">
+</head>
+<body>
+
+<header class="bg-blue-100 h-64 w-full"></header>
+
+<div class="container mx-auto px-4">
+	
+<div class="flex justify-center items-center">
+	
+	<div class="w-full md:w-1/2 lg:w-4/12">
+		
+		<form method="post" class="shadow-xl rounded-xl overflow-hidden border-b-4 border-blue-200" id="login-form">
+			
+			<section class="text-center p-8 bg-blue-100 bg-opacity-75 border-b border-blue-200">
+				
+				<div class="flex justify-center"><img src="https://avatars.dicebear.com/api/gridy/Interactive-Login-Form.svg" class="h-20 w-20 p-2 bg-gray-100 rounded-full border border-gray-200 border-2" /></div>
+				<h3 class="text-xl text-gray-800 mt-3 font-bold">Welcome back!</h3>
+			</section>
+			
+			<section class="p-8 bg-white">
+				
+				<div class="mb-3">
+					<label class="text-xs uppercase text-gray-600 mb-1 block tracking-wider">USERNAME</label>
+					<div class="relative">
+						<div class="absolute inset-y-0 left-0 pl-5 flex items-center pointer-events-none">
+							<span class="text-gray-500 text-sm"><i class="fas fa-user-shield"></i></span>
+						</div>
+					<input type="text" name="username" class="shadow-sm transition duration-500 ease-in-out border border-gray-400 h-10 md:h-12 pl-12 pr-3 w-full block rounded outline-none bg-gray-100 transition-all focus:border-blue-300 focus:bg-white focus:shadow validate-input">
+						</div>
+				</div>
+				
+				<div class="mb-8">
+					
+					<div class="md:flex md:-mx-2">
+						<div class="w-full md:w-3/5 md:mx-2 mb-3 md:mb-0">
+							<label class="text-xs uppercase text-gray-600 mb-1 block tracking-wider">PASSWORD</label>
+							<div class="relative">
+								<div class="absolute inset-y-0 left-0 pl-5 flex items-center pointer-events-none">
+									<span class="text-gray-500 text-sm"><i class="fas fa-key"></i></span>
+								</div>
+								<input type="password" name="password" class="shadow-sm transition duration-500 ease-in-out border border-gray-400 h-10 md:h-12 pl-12 pr-3 w-full block rounded outline-none bg-gray-100 transition-all focus:border-blue-300 focus:bg-white focus:shadow validate-input">
+							</div>
+
+						</div>
+						<div class="w-full md:w-2/5 md:mx-2">
+						
+						<label class="text-xs uppercase text-gray-600 mb-1 block tracking-wider">PIN</label>
+							<div class="relative">
+								<div class="absolute inset-y-0 left-0 pl-5 flex items-center pointer-events-none">
+									<span class="text-gray-500 text-sm"><i class="fas fa-shield-alt"></i></span>
+								</div>
+								<input type="text" name="pin" class="shadow-sm transition duration-500 ease-in-out border border-gray-400 h-10 md:h-12 pl-12 pr-3 w-full block rounded outline-none bg-gray-100 transition-all focus:border-blue-300 focus:bg-white focus:shadow validate-input" maxlength="4">
+							</div>
+								
+							</div>
+					</div>
+					
+					
+				</div>
+				
+				<div class="text-xs bg-red-800 text-white mb-3 rounded py-2 px-5 shadow-xl hidden" id="error-el"></div>
+					
+				<button type="submit" class="border border-blue-700 bg-blue-600 h-12 px-5 w-full block rounded uppercase text-xs text-white tracking-wide shadow-lg transition duration-500 ease-in-out transform hover:scale-105 hover:bg-blue-700">Login</button>
+				
+				<button type="submit" class="mt-5 border border-gray-300 bg-gray-100 h-12 px-5 w-full block rounded uppercase text-xs tracking-wide shadow-lg transition duration-500 ease-in-out transform hover:scale-105 hover:bg-gray-200">Forgot Password?</button>
+				
+			</section>
+			
+	</form>
+		
+	</div>
+	
+	
+</div>
+	
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>	
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"></script>	
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>	
+<script type="text/javascript" src="app.js"></script>	
+
+</body>
+</html>

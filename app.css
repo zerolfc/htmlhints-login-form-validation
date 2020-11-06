@@ -1,0 +1,10 @@
+header {
+	background-image: url(./cover.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#login-form {
+	margin-top: -187px;
+}
